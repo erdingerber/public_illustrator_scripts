@@ -142,7 +142,8 @@ function container()
     //display the data to the user and ask if they want to write it to a file
     if (confirm("Do you want to write this data?:\n" + getCSVtext(rows)))
     {
-        writeCsvData(rows);
+        writeCsvData(rows,csvFilePath);
+
     }
 
 }
